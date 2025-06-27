@@ -1,0 +1,79 @@
+/* General Page Theme */
+.food-page {
+  font-family: 'Tenor Sans', serif;
+  color: #3b3b3b;
+  background-color: #fdfaf5;
+  line-height: 1.8;
+  margin-top: 3rem;
+}
+
+/* Hero Section */
+.hero-food {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+}
+
+.hero-food .overlay {
+      background-color:none !important;
+  border-radius: 1rem;
+  max-width: 750px;
+  padding: 2.5rem;
+}
+
+.hero-food h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-food p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Typography & Paragraphs */
+.elegant-heading {
+  font-family: 'Tenor Sans', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+}
+
+.luxury-paragraph {
+  font-size: 1.15rem;
+  color: #4b4032;
+  margin-bottom: 1.25rem;
+}
+
+/* Light Tint Background */
+.bg-light-tint {
+  background-color: #f8f4ec;
+}
+
+/* Strong Text Highlights */
+.luxury-paragraph strong {
+  font-weight: 600;
+  color: #5d4c3a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-food h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-food p {
+    font-size: 1rem;
+  }
+
+  .elegant-heading {
+    font-size: 1.5rem;
+  }
+
+  .luxury-paragraph {
+    font-size: 1rem;
+  }
+}

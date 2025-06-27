@@ -5,6 +5,8 @@ import YogaPage from '././pages/YogaPage';
 import Navbar from '././pages/Navbar';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import FoodPage from './pages/FoodPage';
+import StayPage from './pages/StayPage';
 
 function App() {
   return (
@@ -13,6 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<AranyakaHomepage />} />
         <Route path="/yoga" element={<YogaPage />} />
+        <Route path='/food' element={<FoodPage />} />
+        <Route path='/stay' element={<StayPage />} />
+
       </Routes>
     </Router>
   );

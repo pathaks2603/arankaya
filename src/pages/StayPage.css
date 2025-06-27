@@ -1,0 +1,72 @@
+/* Limit the image to fill only its column (col-md-6) */
+.room-slider {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.room-slider img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Room section padding */
+.room-section .col-md-6 {
+  padding: 20px;
+}
+
+/* Typography for luxury look */
+.elegant-heading {
+  font-size: 1.8rem;
+  font-family: "Tenor Sans", serif;
+  margin-bottom: 0.8rem;
+}
+
+.luxury-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.luxury-list li {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+/* Section styling */
+.stay-hero {
+  background: linear-gradient(to bottom right, #4e6957, #8aa891);
+}
+
+.stay-hero h1,
+.stay-hero p {
+  color: #fff;
+}
+
+.room-image-modal .modal-content {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+}
+
+.room-image-modal img {
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  max-height: 95vh;
+  max-width: 125vh;
+}
+
+.room-slider img {
+  transition: transform 0.3s ease;
+}
+
+.room-slider img:hover {
+  transform: scale(1.02);
+}
