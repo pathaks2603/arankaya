@@ -1,0 +1,105 @@
+.packages-page {
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+}
+
+.packages-overlay {
+  background-color: rgb(91 82 82 / 62%);
+}
+
+.packages-hero {
+  text-align: center;
+}
+
+.packages-scroll-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-padding-left: 1rem;
+  padding: 1rem 1rem;
+  scrollbar-width: none;
+}
+
+.packages-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.package-card {
+  min-width: 200px;
+  max-width: 200px;
+  flex: 0 0 auto;
+  background-color: blanchedalmond;
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  scroll-snap-align: start;
+  position: relative;
+  font-weight: 600;
+  font-family: "Tenor Sans", serif;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.elegant-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4a392d;
+}
+.display {
+  font-weight: 600;
+  font-family: "Tenor Sans", serif;
+  color: white;
+}
+.standard-rate {
+  font-size: 0.9rem;
+  color: #a94442;
+  margin: 0;
+}
+
+.line-text {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.2rem;
+}
+
+.line-text::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: red;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  animation: lineThrough 1s linear infinite;
+}
+
+@keyframes lineThrough {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.lead {
+  font-family: "Tenor Sans", serif;
+  font-size: 16px;
+}
+
+.discount-text {
+  font-size: 0.85rem;
+  color: #8e5e2c;
+  font-weight: 500;
+  margin: 0.2rem 0;
+}
+
+.final-price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a5d1a;
+  margin: 0.3rem 0;
+}

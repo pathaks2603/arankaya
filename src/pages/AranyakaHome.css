@@ -1,32 +1,97 @@
-.img-fluid {
-  max-width: 100%;
-  float: right;
-  height: 40vh;
-  width: 57vh;
-}
-.image-section {
-  border-radius: 40px !important;
-}
-.vision {
-  float: left;
-  height: 50vh;
-  border-radius: 0 20% 0 20%;
-}
-.background-image {
-     background-color: #055b33;
-}
-.conatiner-text {
-  background-color: wheat;
-  padding: 40px;
-  border-radius: 30px;
-}
-.lead {
-    font-family: sans-serif !important;
-    font-size: 16px;
-}
-.about-ara{
-       font-size: 15px;
-    margin-left: 10px;
-    font-family: cursive;
+/* General theme */
+.luxury-theme {
+  font-family: "Tenor Sans", serif;
+  color: #3e3e3e;
+  background-color: #f8f5f0;
 }
 
+/* Hero Section */
+.hero-section {
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+.display-3 {
+  margin-top: -15%;
+}
+/* About & Vision overlaid */
+.about-vision-overlay {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: blanchedalmond;
+  border-radius: 15px;
+  padding: 2rem;
+  z-index: 2;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  font: brown;
+  color: saddlebrown;
+}
+.back-display {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-vision-overlay {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.5rem 1rem;
+  }
+}
+.experience-section {
+  margin-top: 159px;
+  background: linear-gradient(to top, #fff3cd, #f8f5f0);
+}
+
+.experience-section h2 {
+  font-weight: 600;
+  font-family: "Tenor Sans", serif;
+}
+
+.experience-img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.experience-img:hover {
+  transform: scale(1.03);
+}
+
+.experience-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.experience-link h5 {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  font-family: "Tenor Sans", serif;
+  color: #3a3a3a;
+}
+
+.experience-link:hover {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+/* Buttons */
+button.btn {
+  border-radius: 0;
+  padding: 10px 30px;
+  font-weight: 600;
+}

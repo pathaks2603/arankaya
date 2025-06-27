@@ -1,6 +1,60 @@
-footer p, footer li {
-  font-size: 14px;
+/* FooterHomepage.css */
+
+.footer-luxury {
+  background-color: #f1ede7;
+  color: #3e3e3e;
+  font-family: "Georgia", serif;
+  border-top: 1px solid #dcd3c2;
 }
-footer h5, footer h6 {
+
+.footer-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-subtitle {
+  font-size: 1.25rem;
   font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #3e3e3e;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #7c6f59;
+}
+
+.footer-icon {
+  font-size: 1.25rem;
+  color: #3e3e3e;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #7c6f59;
+}
+
+.footer-bottom-text {
+  border-top: 1px solid #dcd3c2;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+.map {
+  background-color: black;
+}
+.iframe-map {
+  margin-top: 0.9rem;
 }
