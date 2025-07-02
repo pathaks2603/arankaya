@@ -1,6 +1,8 @@
 import "../pages/StayPage.css";
 import { useState, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
+import backgroundImage from "../assets/amaram_nivas.jpeg";
+
 // Image Imports - Replace with actual files
 import harita1 from "../assets/samtya.jpeg";
 import harita2 from "../assets/Haritanivas.jpeg";
@@ -24,6 +26,7 @@ import panchbhooti2 from "../assets/samtya.jpeg";
 
 import mridang1 from "../assets/chaityana.jpeg";
 import mridang2 from "../assets/samtya.jpeg";
+import PackagesPage from "./PackagePage";
 
 const stayData = [
   {
@@ -114,15 +117,57 @@ const stayData = [
 const StayPage = () => {
   return (
     <div className="stay-page luxury-theme">
-      <section className="stay-hero text-center text-white py-5">
-        <h1 className="display-4 fw-bold">Stay at Aranyaka</h1>
-        <p className="lead px-3">
+      <section
+        className="stay-hero text-center text-white py-5"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center center",
+          height: "60vh"
+        }}
+      >
+        <div className="display-background">
+        <h4 className="display-4 fw-bold py-5">
+          Stay With Us – Where Comfort Meets Consciousness
+        </h4>
+        <p className="lead">
           Your room is more than a place to sleep — it is a sanctuary to pause,
           breathe, and live in harmony with nature.
         </p>
+        </div>
       </section>
 
-      <section className="stay-gallery container py-5">
+      <section className="container py-4 intro-stay">
+          <h2 className="elegant-heading">Amenities</h2>
+        <p className="lead text-muted">
+          At Aranyaka, comfort isn’t just about luxury—it’s about feeling at
+          home with nature, with others, and with yourself. Our 7 thoughtfully
+          designed double-occupancy rooms offer warm, earthy aesthetics, restful
+          energy, and just the right amount of modern ease.
+          <br />
+          Your Stay Includes:
+          <ul>
+            <li>A serene heated swimming pool for year-round relaxation</li>
+            <li>
+              Spa therapies and wellness treatments to restore balance and
+              vitality
+            </li>
+            <li>
+              Inviting spaces for indoor games, art, and creative expression
+            </li>
+            <li>A tranquil yoga and meditation studio to reconnect within</li>
+            <li>Pickleball and badminton courts under the open sky</li>
+            <li>A classic pool table for casual fun and connection</li>
+            <li>A lush garden to read, reflect, or simply be</li>
+          </ul>
+          Whether you're unwinding solo or bonding with fellow seekers, every
+          corner of Aranyaka is crafted to support a balanced, joyful, and
+          conscious way of living.
+        </p>
+      </section>
+
+      <section className="stay-gallery container">
         {stayData.map((room, index) => (
           <div
             className={`row room-section mb-5 align-items-center ${
@@ -155,6 +200,8 @@ const StayPage = () => {
           </ul>
         </div>
       </section>
+
+      <PackagesPage />
     </div>
   );
 };

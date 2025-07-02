@@ -1,6 +1,8 @@
 import "../pages/YogaPage.css";
 import yogGuru from "../assets/yogaRishi.jpeg";
 
+const formBaseURL = "https://aranyakayogafoundation.com/";
+
 const YogaPage = () => {
   return (
     <div className="yoga-page luxury-theme">
@@ -8,7 +10,7 @@ const YogaPage = () => {
       <section
         className="hero-yoga d-flex align-items-center justify-content-center text-white text-center"
         style={{
-          backgroundImage: `url(https://images.pexels.com/photos/1051838/pexels-photo-1051838.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)`,
+          backgroundImage: `url(https://aranyakayogafoundation.com/wp-content/uploads/2024/09/Untitled_design_3-transformed.jpeg)`,
         }}
       >
         <div className="overlay p-5">
@@ -16,7 +18,12 @@ const YogaPage = () => {
           <p className="lead">
             Begin your journey within, surrounded by nature’s embrace.
           </p>
-          <button className="btn btn-outline-light btn-lg mt-3">Join Us</button>
+          <button className="btn btn-outline-light btn-lg mt-3"
+            onClick={() => {
+              const url = `${formBaseURL}`;
+              window.open(url, "_blank");
+            }}>
+            Explore More</button>
         </div>
       </section>
 
@@ -37,11 +44,14 @@ const YogaPage = () => {
               <div className="rounded shadow bg-white p-4 schedule-mini-box">
                 <h5 className="fw-bold mb-3">A Day at Aranyaka</h5>
                 <ul className="list-unstyled">
-                  <li>
-                    <strong>6:00 AM</strong> – Sunrise Yoga Practice
+                   <li>
+                    <strong>6:00 AM</strong> – Surya Havan
                   </li>
                   <li>
-                    <strong>8:00 AM</strong> – Organic Farm-Fresh Breakfast
+                    <strong>7:00 AM</strong> – Sunrise Yoga Practice
+                  </li>
+                  <li>
+                    <strong>8:30 AM</strong> – Organic Farm-Fresh Breakfast
                   </li>
                   <li>
                     <strong>10:00 AM</strong> – Seva: Gardening, Art, DIY, or
@@ -58,6 +68,9 @@ const YogaPage = () => {
                   </li>
                   <li>
                     <strong>8:00 PM</strong> – Dinner & Wind Down
+                  </li>
+                   <li>
+                    <strong>9:00 PM</strong> – Yog Nidra 
                   </li>
                 </ul>
               </div>

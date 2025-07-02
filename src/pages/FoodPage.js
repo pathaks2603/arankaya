@@ -7,12 +7,12 @@ const FoodPage = () => {
       <section
         className="hero-food d-flex align-items-center justify-content-center text-white text-center"
         style={{
-          backgroundImage: `url(https://www.yogabasics.com/yogabasics2017/wp-content/uploads/2019/10/epicurrence-MtT0MMBT1Ws-unsplash.jpg)
+          backgroundImage: `url(https://www.thefarmatsanbenito.com/wp-content/uploads/2022/12/hero-food.jpg)
           `,
         }}
       >
-        <div className="overlay p-5">
-          <h1 className="display-4 fw-bold">Food at Aranyaka</h1>
+        <div className="overlay p-5 display-bg">
+          <h1 className="display-4 fw-bold">Farm-to-Table Dining</h1>
           <p className="lead">
             Where every meal is a sacred ritual, a mindful celebration of the
             earth.

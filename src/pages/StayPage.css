@@ -25,7 +25,9 @@
   font-family: "Tenor Sans", serif;
   margin-bottom: 0.8rem;
 }
-
+.display-background{
+   background-color: rgba(0, 0, 0, 0.2);
+}
 .luxury-paragraph {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -42,7 +44,9 @@
 .stay-hero {
   background: linear-gradient(to bottom right, #4e6957, #8aa891);
 }
-
+.header-content{
+  margin-top: 4rem;
+}
 .stay-hero h1,
 .stay-hero p {
   color: #fff;

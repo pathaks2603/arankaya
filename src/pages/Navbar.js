@@ -26,7 +26,7 @@ const Navbar = () => {
           className="navbar-brand mx-auto mx-lg-0 order-1 order-lg-0"
           to="/"
         >
-          Aranyaka Life
+        Aranyaka – Farmstay & Conscious Living Retreat
         </Link>
 
         {/* Book Now button - Always right */}
@@ -73,7 +73,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/stay">
-                Stay
+                Room & Amenities
+              </Link>
+            </li>
+             <li className="nav-item">
+              <Link className="nav-link" to="/gallery">
+                Gallery
               </Link>
             </li>
           </ul>

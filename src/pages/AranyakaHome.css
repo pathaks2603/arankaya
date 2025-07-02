@@ -24,7 +24,7 @@
 /* About & Vision overlaid */
 .about-vision-overlay {
   position: absolute;
-  bottom: -20%;
+  bottom: -38%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -51,7 +51,7 @@
   }
 }
 .experience-section {
-  margin-top: 159px;
+  margin-top: 280px;
   background: linear-gradient(to top, #fff3cd, #f8f5f0);
 }
 
@@ -94,4 +94,38 @@ button.btn {
   border-radius: 0;
   padding: 10px 30px;
   font-weight: 600;
+}
+.arayan-homepage{
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .experience-section {
+    margin-top: 355px !important;
+  }
+}
+@media (max-width: 820px) {
+  .experience-section {
+    margin-top: 517px !important;
+  }
+}
+@media (max-width: 768px) {
+  .experience-section {
+    margin-top: 800px !important;
+  }
+}
+@media (max-width: 430px) {
+  .experience-section {
+    margin-top: 1264px !important;
+  }
+}
+@media (max-width: 375px) {
+  .experience-section {
+    margin-top: 1485px !important;
+  }
+}
+@media (max-width: 320px) {
+  .experience-section {
+    margin-top: 1740px !important;
+  }
 }

@@ -16,10 +16,13 @@
 }
 
 .hero-food .overlay {
-      background-color:none !important;
   border-radius: 1rem;
-  max-width: 750px;
   padding: 2.5rem;
+}
+.display-bg{
+   background-color: rgba(0, 0, 0, 0.2);
+   height: 100%;
+    width: 100%;
 }
 
 .hero-food h1 {

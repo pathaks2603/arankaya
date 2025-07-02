@@ -5,7 +5,7 @@ import yogaImg from "../assets/yoga.JPG";
 import sun from "../assets/sunset.jpeg";
 import Footer from "../pages/FooterHomepage";
 import { Link } from "react-router-dom";
-import PackagesPage from "./PackagePage";
+
 import harita1 from "../assets/samtya.jpeg";
 import harita2 from "../assets/Haritanivas.jpeg";
 import harita3 from "../assets/chaityana.jpeg";
@@ -47,16 +47,9 @@ export default function AranyakaHomepage() {
         <div className="overlay d-flex flex-column justify-content-center align-items-center back-display">
           <h1 className="display-3">LIVE THE ARANYAKA WAY</h1>
           {/* <button className="btn btn-light mt-3">BOOK NOW</button> */}
-          <button
-            className="btn btn-light mt-3"
-            onClick={() => {
-              const url = `${formBaseURL}`;
-              //   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=aranyaka.108@gmail.com&su=Enquiry for ${pkg.nights} nights stay&body=Hi, I’m interested in the ${pkg.nights}-night package at Aranyaka. Please share more details.`;
-              window.open(url, "_blank");
-            }}
-          >
-            Book Now
-          </button>
+          <h2 className="mb-3">
+            A return to the roots. A pause for the soul.{" "}
+          </h2>
         </div>
 
         {/* About & Vision overlay on image */}
@@ -65,29 +58,42 @@ export default function AranyakaHomepage() {
             <div className="col-md-6">
               <div className="box light-box h-100 p-4">
                 <h2 className="mb-3">About Us</h2>
-                <p>
-                  Aranyaka is more than a destination—it's a lifestyle anchored
-                  in conscious living. Nestled within 36 acres of lush mango and
-                  litchi orchards, our farmstay in Ranipokhri offers a space for
-                  rest, reflection, and reconnection—with nature, with
-                  community, and with yourself. Our mission is to build a
-                  self-sustaining ecosystem following food forest principles,
-                  where people can live in rhythm with the land and themselves.
+                <p className="arayan-homepage">
+                  Aranyaka is a conscious farmstay rooted in simplicity,
+                  sustainability, and soulful living. Located in the heart of
+                  Ranipokhri and surrounded by 36 acres of mango and litchi
+                  orchards, we offer more than a place to stay—we offer a way to
+                  live. Inspired by the principles of permaculture and food
+                  forests, Aranyaka was created as a space where people can
+                  pause, reconnect, and contribute. Whether you’re here for a
+                  few days or a few weeks, your time is shaped by intentional
+                  routines—wholesome food, nature-based living, community seva,
+                  and creative stillness. We welcome travelers, seekers, and
+                  storytellers into a warm, inclusive space where personal
+                  well-being and ecological harmony walk hand-in-hand. Aranyaka
+                  is for those who want to slow down with purpose, live gently,
+                  and become part of something meaningful.
                 </p>
               </div>
             </div>
             <div className="col-md-6">
               <div className="box light-box h-100 p-4">
-                <h2 className="mb-3">Our Vision</h2>
-                <p>
-                  Our philosophy is rooted in the principles of the ancient
-                  Aaranyak texts, permaculture and food forest—where nature
-                  leads and we follow. Everything we do is designed to be
-                  regenerative, from our farming techniques to our daily
-                  routines. We compost, harvest rainwater, use solar energy, and
-                  grow food in cycles that mirror nature’s intelligence. Our
-                  long-term goal is to become fully self-sustaining—and we
-                  invite you to be a part of that vision.
+                <h2 className="mb-3">Vision – A Life in Balance</h2>
+                <p className="arayan-homepage"> 
+                  At Aranyaka, we envision a life where the mind, body, and soul
+                  move in harmony with nature. Each day begins with a sacred
+                  Havan, anchoring us in presence and gratitude. Guests
+                  contribute their skills and spirit through seva—gardening,
+                  art, or mindful creation—while savoring farm-to-table meals
+                  born from the land. Through yoga, meditation, games,
+                  stillness, and shared stories, we create space for both inner
+                  reflection and joyful community. There is room for silence and
+                  celebration, solitude and connection. As the sun sets, we
+                  gently close the day with Yog Nidra, returning to ourselves
+                  with softness and intention. Our vision is simple yet
+                  profound: To create a space where like-minded souls live
+                  consciously, move gently, give freely, and leave fuller than
+                  they arrived—rested, rooted, and reconnected.
                 </p>
               </div>
             </div>
@@ -134,7 +140,7 @@ export default function AranyakaHomepage() {
         </div>
       </section>
 
-      <PackagesPage />
+   
       <Footer />
     </div>
   );
