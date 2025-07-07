@@ -26,7 +26,7 @@ const Navbar = () => {
           className="navbar-brand mx-auto mx-lg-0 order-1 order-lg-0"
           to="/"
         >
-        Aranyaka – Farmstay & Conscious Living Retreat
+        Aranyaka Farmstay
         </Link>
 
         {/* Book Now button - Always right */}
