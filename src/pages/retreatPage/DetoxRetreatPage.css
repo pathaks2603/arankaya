@@ -1,0 +1,122 @@
+.detox-page {
+  background-color: #f7f4ef;
+  color: #3a3a3a;
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.8;
+}
+
+/* Banner */
+.detox-banner {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+.detox-banner-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+}
+.detox-tagline {
+  font-size: 1.3rem;
+  color: #bfa46f;
+}
+
+/* Container */
+.detox-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Headings */
+.detox-heading {
+  color: #bfa46f;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(191, 164, 111, 0.4);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Overview text */
+.detox-overview {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Lists */
+.detox-list {
+  list-style: none;
+  padding-left: 0;
+}
+.detox-list li {
+  background: rgba(191, 164, 111, 0.08);
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 0.5rem;
+  border-left: 3px solid #bfa46f;
+  border-radius: 4px;
+}
+
+/* Tables */
+.detox-table {
+  background: rgba(255, 255, 255, 0.7);
+}
+.detox-table th {
+  background: rgba(191, 164, 111, 0.12);
+  color: #bfa46f;
+}
+.detox-table td,
+.detox-table th {
+  border: 1px solid rgba(191, 164, 111, 0.2);
+  padding: 0.6rem;
+}
+
+/* Images */
+.detox-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.detox-feature-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* CTA text */
+.detox-cta {
+  color: #bfa46f;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+/* Buttons */
+.btn-gold {
+  background-color: #bfa46f;
+  color: #fff;
+  border: none;
+}
+.btn-gold:hover {
+  background-color: #a88d5a;
+}
+.btn-outline-gold {
+  border: 1px solid #bfa46f;
+  color: #bfa46f;
+}
+.btn-outline-gold:hover {
+  background-color: #bfa46f;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .detox-heading {
+    font-size: 1.2rem;
+  }
+  .detox-list li {
+    font-size: 0.95rem;
+  }
+}

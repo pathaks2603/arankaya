@@ -1,76 +1,147 @@
-/* Limit the image to fill only its column (col-md-6) */
-.room-slider {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
+.luxury-room {
+  display: flex;
+  align-items: stretch;
 }
 
-.room-slider img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
+.luxury-carousel-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.luxury-carousel-img {
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  max-height: 400px;
 }
 
-/* Room section padding */
-.room-section .col-md-6 {
-  padding: 20px;
+.luxury-info-panel {
+  background: #fdf9f3;
+  border-left: 4px solid #bfa46f;
+  padding: 1.8rem;
+  border-radius: 0 16px 16px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 400px;
 }
 
-/* Typography for luxury look */
-.elegant-heading {
+.luxury-room-title {
+  color: #bfa46f;
+  font-family: "Playfair Display", serif;
   font-size: 1.8rem;
-  font-family: "Tenor Sans", serif;
-  margin-bottom: 0.8rem;
-}
-.display-background{
-   background-color: rgba(0, 0, 0, 0.2);
-}
-.luxury-paragraph {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #444;
   margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
-.luxury-list li {
-  margin-bottom: 0.4rem;
+/* ✅ updated text color & font for description */
+.luxury-room-desc {
+  color: #3a3a3a;
   font-size: 1rem;
+  margin-bottom: 1.2rem;
+  font-family: "Georgia", "Times New Roman", serif;
 }
 
-/* Section styling */
+/* ✅ updated text color & font for feature list */
+.luxury-room-features {
+  list-style: none;
+  padding-left: 0;
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-family: "Tenor Sans", serif;
+}
+
+.luxury-room-features li::before {
+  content: "• ";
+  color: #bfa46f;
+  font-weight: bold;
+}
+
+/* ✅ updated text color & font for common includes list */
+.luxury-list {
+  list-style: none;
+  padding-left: 0;
+  color: #3a3a3a;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.luxury-list li::before {
+  content: "• ";
+  color: #bfa46f;
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .luxury-room {
+    flex-direction: column;
+  }
+  .luxury-info-panel {
+    border-left: none;
+    border-top: 4px solid #bfa46f;
+    border-radius: 0 0 16px 16px;
+  }
+  .luxury-carousel-img {
+    max-height: 300px;
+  }
+}
+
+.amenities-section {
+  margin-top: 2rem;
+}
+
+.amenities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* ✅ updated text color & font for amenities items */
+.amenity-item {
+  background: #f9f5ef;
+  border-left: 4px solid #bfa46f;
+  padding: 0.75rem 1rem;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #3a3a3a;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.amenity-item:hover {
+  transform: translateX(5px);
+}
 .stay-hero {
-  background: linear-gradient(to bottom right, #4e6957, #8aa891);
-}
-.header-content{
-  margin-top: 4rem;
-}
-.stay-hero h1,
-.stay-hero p {
+  position: relative;
   color: #fff;
 }
 
-.room-image-modal .modal-content {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
 }
 
-.room-image-modal img {
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-  max-height: 95vh;
-  max-width: 125vh;
+.hero-content {
+  max-width: 800px;
 }
 
-.room-slider img {
-  transition: transform 0.3s ease;
+.hero-heading {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.room-slider img:hover {
-  transform: scale(1.02);
+.hero-subtext {
+  font-size: 1.1rem;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #f5f5f5;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }

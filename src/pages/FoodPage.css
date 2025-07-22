@@ -1,82 +1,109 @@
-/* General Page Theme */
-.food-page {
-  font-family: 'Tenor Sans', serif;
-  color: #3b3b3b;
-  background-color: #fdfaf5;
-  line-height: 1.8;
+/* Base */
+.food-page-aranyaka {
+  font-family: "Cormorant Garamond", serif;
+  background-color: #fdf9f2;
+  color: #3b2f24;
+  line-height: 1.85;
   margin-top: 3rem;
 }
 
-/* Hero Section */
-.hero-food {
+/* Hero */
+.food-hero-aranyaka {
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 60vh;
   position: relative;
 }
 
-.hero-food .overlay {
+.food-hero-overlay-aranyaka {
+  background-color: rgba(30, 20, 10, 0.5);
   border-radius: 1rem;
+  max-width: 750px;
   padding: 2.5rem;
 }
-.display-bg{
-   background-color: rgba(0, 0, 0, 0.2);
-   height: 100%;
-    width: 100%;
-}
 
-.hero-food h1 {
-  font-size: 3rem;
-  font-weight: 700;
+.food-hero-title-aranyaka {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  font-weight: 600;
   letter-spacing: 1px;
+  color: #f8f5ef;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
-.hero-food p {
-  font-size: 1.25rem;
+.food-hero-subtitle-aranyaka {
+  font-size: 1.4rem;
   font-weight: 300;
+  color: #e9e0d2;
 }
 
-/* Typography & Paragraphs */
-.elegant-heading {
-  font-family: 'Tenor Sans', serif;
-  font-size: 2rem;
+/* Headings */
+.food-heading-aranyaka {
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
   font-weight: 600;
-  color: #2c2c2c;
+  color: #bfa46f;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.food-heading-aranyaka::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #c2a78c;
+  margin: 0.8rem auto 0;
+  border-radius: 1px;
+}
+
+/* Paragraphs */
+.food-paragraph-aranyaka {
+  font-size: 1.2rem;
+  color: #4b3e31;
   margin-bottom: 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.luxury-paragraph {
-  font-size: 1.15rem;
-  color: #4b4032;
-  margin-bottom: 1.25rem;
-}
-
-/* Light Tint Background */
-.bg-light-tint {
-  background-color: #f8f4ec;
-}
-
-/* Strong Text Highlights */
-.luxury-paragraph strong {
+.food-paragraph-aranyaka strong {
   font-weight: 600;
-  color: #5d4c3a;
+  color: #5a4b3a;
+}
+
+/* Light sections */
+.food-section-light-aranyaka {
+  background-color: #faf4eb;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Fade-in effect */
+.food-page-aranyaka section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.food-page-aranyaka section.visible {
+  opacity: 1;
+  transform: none;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-food h1 {
+  .food-hero-title-aranyaka {
     font-size: 2.2rem;
   }
-
-  .hero-food p {
-    font-size: 1rem;
+  .food-hero-subtitle-aranyaka {
+    font-size: 1.1rem;
   }
-
-  .elegant-heading {
-    font-size: 1.5rem;
+  .food-heading-aranyaka {
+    font-size: 1.8rem;
   }
-
-  .luxury-paragraph {
-    font-size: 1rem;
+  .food-paragraph-aranyaka {
+    font-size: 1.05rem;
   }
 }

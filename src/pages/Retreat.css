@@ -1,0 +1,104 @@
+/* Premium serif font */
+body {
+  font-family: "Playfair Display", serif;
+  color: #333;
+}
+
+/* Hero overlay: elegant gradient for clarity */
+.hero-overlay-retreat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Hero title and subtitle */
+.hero-title {
+  font-size: 3.5rem;
+  color: #f8f5f0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #e0d8c8;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
+/* Retreat card */
+.retreat-card {
+  cursor: pointer;
+  border: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.retreat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Image styling */
+.retreat-image-wrapper {
+  position: relative;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.retreat-image {
+  width: 100%;
+  height: 300px; /* larger images */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.retreat-card:hover .retreat-image {
+  transform: scale(1.05);
+}
+
+/* Overlay on hover */
+.retreat-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 30, 20, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.retreat-card:hover .retreat-overlay {
+  opacity: 1;
+}
+
+/* Retreat title with gold underline on hover */
+.retreat-title {
+  font-size: 1.4rem;
+  color: #fdf9f2;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.retreat-title::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #d4af37; /* soft gold */
+  margin: 4px auto 0;
+  transition: width 0.4s ease;
+}
+
+.retreat-card:hover .retreat-title::after {
+  width: 40%;
+}
+
+/* Lead text softer color */
+.lead {
+  color: #5a5a5a;
+}

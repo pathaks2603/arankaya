@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -19,6 +19,14 @@ const Footer = () => {
               Rooted in Nature, Growing in Harmony, we offer a unique space for
               rest, reflection, and reconnection with the land and oneself.
             </p>
+            <div className="footer-social mt-3">
+              <a href="#" className="footer-icon me-3">
+                <FaFacebookF />
+              </a>
+              <a href="#" className="footer-icon">
+                <FaInstagram />
+              </a>
+            </div>
           </Col>
 
           <Col md={4}>
@@ -43,7 +51,7 @@ const Footer = () => {
             </ul>
           </Col>
 
-          <Col md={4} className="text-md-end map">
+          <Col md={4} className="text-md-end map fade-in">
             <iframe
               title="Aranyaka Farmstay Map"
               src="https://www.google.com/maps?q=Aranyaka+Farmstay,+Ranipokhari&output=embed"
@@ -57,6 +65,22 @@ const Footer = () => {
             ></iframe>
           </Col>
         </Row>
+        {/* 
+        <hr className="footer-divider" />
+
+        <Row className="newsletter mt-4 mb-2 text-center">
+          <Col md={8} className="mx-auto">
+            <p className="footer-text mb-2">🌿 Join our community & receive retreat updates</p>
+            <Form className="d-flex justify-content-center">
+              <Form.Control
+                type="email"
+                placeholder="Your email"
+                className="me-2 footer-newsletter-input"
+              />
+              <Button variant="outline-light" className="footer-newsletter-btn">Subscribe</Button>
+            </Form>
+          </Col>
+        </Row> */}
 
         <Row>
           <Col className="text-center small footer-bottom-text">

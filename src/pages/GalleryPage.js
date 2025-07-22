@@ -37,42 +37,122 @@ import aam19 from "../assets/amaram/aam19.jpeg";
 import aam20 from "../assets/amaram/aam20.jpeg";
 import mridang1 from "../assets/chaityana.jpeg";
 import mridang2 from "../assets/samtya.jpeg";
+import badminton from "../assets/gallery/badminton.JPG";
+import aamtree from "../assets/gallery/aamtree.JPG";
+import badminton3 from "../assets/gallery/badminton3.JPG";
+import carromatterrace from "../assets/gallery/carromatterrace.JPG";
+import chitchat from "../assets/gallery/chitchat.JPG";
+import chitchatoutside from "../assets/gallery/chitchatoutside.JPG";
+import commanareapooltable from "../assets/gallery/commanareapooltable.jpg";
+import TV from "../assets/gallery/commanareaTV.jpg";
+import common1 from "../assets/gallery/commonarea.jpg";
+import common2 from "../assets/gallery/commonarea2.jpg";
+import commonsitting from "../assets/gallery/commonareasitting.jpg";
+import cottageoutside from "../assets/gallery/cottageoutside.JPG";
+import diningarea from "../assets/gallery/diningarea.jpg";
+import farmview from "../assets/gallery/farmview.jpg";
+import farm1 from "../assets/gallery/farmview2.jpg";
+import farm2 from "../assets/gallery/farmview4.jpg";
+import hall from "../assets/gallery/hallforharita2.jpg";
+import hall1 from "../assets/gallery/hallforharitanivas.jpg";
+import hall2 from "../assets/gallery/hallforsamatvanight.jpg";
+import hall3 from "../assets/gallery/hallforsamatvanivas.jpg";
+import hall4 from "../assets/gallery/hallforsamatvanivas2.jpg";
+import hall5 from "../assets/gallery/hallwaytoporch.jpg";
+import hall6 from "../assets/gallery/hallwaytoporch2.jpg";
+import hall7 from "../assets/gallery/hallwaytoporch3.jpg";
+import hall8 from "../assets/gallery/houseview.jpg";
+import hall9 from "../assets/gallery/houseviewgarden.jpg";
+import hall10 from "../assets/gallery/pickleball.JPG";
+import hall11 from "../assets/gallery/pickleball2.JPG";
+import hall12 from "../assets/gallery/porchback.JPG";
+import hall13 from "../assets/gallery/relaxlady.JPG";
+import hall14 from "../assets/gallery/sunrise.jpg";
+import hall15 from "../assets/gallery/swimmingpoolaerialview.jpg";
+import hall16 from "../assets/gallery/teatime.JPG";
+import hall17 from "../assets/gallery/teatime2.JPG";
+import hall18 from "../assets/gallery/veggies.jpg";
+import hall19 from "../assets/gallery/yogalady.JPG";
 
 const images = [
+  aam3,
+  cottageoutside,
+  hall13,
+  aam14,
+  farm2,
+  hall4,
+  aam19,
+  hall10,
+  carromatterrace,
+  aam8,
+  hall1,
+  aam10,
+  common1,
+  aam6,
+  hall5,
+  chitchat,
+  aam1,
+
+  aam16,
+  diningarea,
+  aam4,
+  hall2,
+  aam12,
+  farmview,
+  aam7,
+  hall12,
+  aam20,
   harita1,
-  harita2,
+  hall3,
+  aam18,
+  hall9,
+  aam2,
+  badminton,
+  aam11,
+  hall6,
+  aam5,
+  commonsitting,
+  aam13,
+  hall15,
+  aam17,
+  hall8,
+  common2,
+  hall16,
+  aam15,
+  commanareapooltable,
+  hall11,
+  aam9,
   harita3,
+  hall7,
+  aam13,
+  harita2,
+  aam17,
+  hall18,
+  aam5,
+  hall14,
+  aam7,
+  hall17,
+  aam4,
+  aam19,
   harita4,
+  aam8,
   harita5,
+  aam12,
   samatva1,
   samatva2,
   samatva3,
   sattva1,
   chaitanya1,
+  hall19,
   chaitanya2,
+  chitchatoutside,
+  farm1,
   chaitanya3,
   mridang1,
   mridang2,
-  aam1,
-  aam2,
-  aam3,
-  aam4,
-  aam5,
-  aam6,
-  aam7,
-  aam8,
-  aam9,
-  aam10,
-  aam11,
-  aam12,
-  aam13,
-  aam14,
-  aam15,
-  aam16,
-  aam17,
-  aam18,
-  aam19,
-  aam20,
+  badminton3,
+  aamtree,
+  TV,
 ];
 
 const GalleryPage = () => {
@@ -99,19 +179,26 @@ const GalleryPage = () => {
       <section
         className="stay-hero text-center text-white py-5"
         style={{
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundImage: `url(${hall9})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
           height: "60vh",
         }}
       >
-        <div className="display-background">
+        <div
+          className="display-background"
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.1)",
+            padding: "2rem",
+            borderRadius: "10px",
+          }}
+        >
           <div className="gallery-page container py-5">
             <h1 className="text-center mb-4 display-5 fw-bold">
               Gallery – Moments at Aranyaka
             </h1>
-            <p className="text-center mb-5 lead text-muted">
+            <p className="text-center mb-5 lead" style={{ color: "#f8f4ec" }}>
               Discover glimpses of life at Aranyaka — from serene sunrises to
               joyful gatherings in nature’s embrace.
             </p>
@@ -120,15 +207,14 @@ const GalleryPage = () => {
       </section>
 
       <section>
-        <div className="row g-4 p-4">
+        <div className="masonry-gallery">
           {images.map((img, index) => (
-            <div className="col-sm-6 col-md-4 col-lg-3" key={index}>
+            <div className="masonry-item" key={index}>
               <img
                 src={img}
                 alt={`Aranyaka ${index + 1}`}
-                className="img-fluid rounded shadow-sm gallery-img"
+                className="gallery-img"
                 onClick={() => handleShow(index)}
-                style={{ cursor: "pointer" }}
               />
             </div>
           ))}

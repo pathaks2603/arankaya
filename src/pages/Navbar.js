@@ -5,10 +5,17 @@ import "../pages/Navbar.css";
 const formBaseURL = "https://forms.gle/FxNNsBiPj9gNSfrF7";
 
 const Navbar = () => {
+  // Function to close navbar on click (mobile)
+  const closeNavbar = () => {
+    const navbarToggler = document.querySelector(".navbar-collapse");
+    if (navbarToggler && navbarToggler.classList.contains("show")) {
+      navbarToggler.classList.remove("show");
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
       <div className="container-fluid">
-        {/* Hamburger on small screens */}
         <button
           className="navbar-toggler d-lg-none order-0"
           type="button"
@@ -21,63 +28,54 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Brand in center (mobile) or left (desktop) */}
         <Link
           className="navbar-brand mx-auto mx-lg-0 order-1 order-lg-0"
           to="/"
         >
-        Aranyaka Farmstay
+          Aranyaka Farmstay
         </Link>
-
-        {/* Book Now button - Always right */}
 
         <div className="order-2 ms-auto">
           <button
-            onClick={() => {
-              const url = `${formBaseURL}`;
-              //   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=aranyaka.108@gmail.com&su=Enquiry for ${pkg.nights} nights stay&body=Hi, I’m interested in the ${pkg.nights}-night package at Aranyaka. Please share more details.`;
-              window.open(url, "_blank");
-            }}
+            onClick={() => window.open(formBaseURL, "_blank")}
             className="btn btn-outline-warning text-white fw-bold me-2"
           >
-            Book Now
+            Enquire Now
           </button>
-          {/* <Link
-            to="/packages"
-            className="btn btn-outline-warning text-white fw-bold me-2"
-          >
-            Book Now
-          </Link> */}
         </div>
 
-        {/* Collapsible nav links */}
         <div
           className="collapse navbar-collapse justify-content-lg-end order-lg-1"
           id="navbarNav"
         >
           <ul className="navbar-nav text-end text-lg-start">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/" onClick={closeNavbar}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/yoga">
-                Yoga
+              <Link className="nav-link" to="/yoga" onClick={closeNavbar}>
+                Yoga/TTC
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/food">
+              <Link className="nav-link" to="/food" onClick={closeNavbar}>
                 Food
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/stay">
-                Room & Amenities
+              <Link className="nav-link" to="/stay" onClick={closeNavbar}>
+                Stay
               </Link>
             </li>
-             <li className="nav-item">
-              <Link className="nav-link" to="/gallery">
+            <li className="nav-item">
+              <Link className="nav-link" to="/retreat" onClick={closeNavbar}>
+                Retreats
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/gallery" onClick={closeNavbar}>
                 Gallery
               </Link>
             </li>

@@ -1,8 +1,30 @@
 /* General theme */
 .luxury-theme {
-  font-family: "Tenor Sans", serif;
-  color: #3e3e3e;
-  background-color: #f8f5f0;
+  background-color: #f7f4ef;
+  color: #3a3a3a;
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.8;
+}
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -2; /* keep it below .top */
+  opacity: 1; /* always visible */
+}
+
+.hero-bg.top {
+  z-index: -1; /* on top of .hero-bg but below text */
+  opacity: 0; /* hidden by default */
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-bg.top.fading {
+  opacity: 1; /* fade in new image */
 }
 
 /* Hero Section */
@@ -18,29 +40,261 @@
   padding: 2rem;
   text-align: center;
 }
+
 .display-3 {
   margin-top: -15%;
+  color: #6e5838 !important;
+  font-family: "Georgia", serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgb(255 255 255 / 67%);
 }
-/* About & Vision overlaid */
+.exp {
+  color: #bfa46f;
+  font-weight: 600;
+  font-family: "Georgia", "Times New Roman", serif;
+  border-bottom: 1px solid rgba(191, 164, 111, 0.4);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.hero-section h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #6e5838;
+  font-family: "Georgia", serif;
+}
+
+/* About & Vision overlay */
+/* About & Vision overlay - keep as is */
 .about-vision-overlay {
   position: absolute;
   bottom: -38%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  background-color: blanchedalmond;
-  border-radius: 15px;
-  padding: 2rem;
+  border-radius: 20px;
   z-index: 2;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  font: brown;
-  color: saddlebrown;
-}
-.back-display {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile Responsive */
+/* Light box with luxury gradient background */
+.light-box {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 250, 240, 0.95),
+    rgba(247, 244, 239, 0.95)
+  );
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(191, 164, 111, 0.2);
+  padding: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.light-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings inside cards - add gold underline effect */
+.light-box h2 {
+  color: #bfa46f;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+
+.light-box h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #bfa46f;
+  opacity: 0.6;
+}
+/* Fade overlay on hero section */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  z-index: 0;
+}
+
+.hero-section.fade-in::before {
+  opacity: 1;
+}
+.smooth-hero {
+  position: relative;
+  z-index: 0;
+}
+/* New: background hero transition with fade */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  z-index: -1;
+}
+
+.hero-bg.fading {
+  opacity: 0;
+}
+
+.smooth-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: -1;
+}
+
+.smooth-hero.fading::before {
+  background-image: inherit; /* uses the new backgroundImage */
+  opacity: 1;
+}
+
+/* Paragraphs inside boxes */
+.arayan-homepage {
+  font-size: 1rem;
+  color: #010101;
+  text-align: justify;
+}
+
+/* Experience section */
+.experience-section {
+  margin-top: 280px;
+  background: linear-gradient(to top, #f7f2e8, #f7f4ef);
+}
+
+/* Card container */
+.experience-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease;
+  height: 300px; /* make all cards equal height */
+}
+
+/* Image inside card */
+.experience-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensure images fill card equally */
+  border-radius: 12px;
+  transition: transform 1s ease, filter 1s ease;
+}
+
+/* Hover: lift card */
+.experience-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay */
+.experience-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(191, 164, 111, 0.25),
+    rgba(0, 0, 0, 0.4)
+  );
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+  border-radius: 12px;
+  border: 1px solid rgba(191, 164, 111, 0.4);
+}
+
+/* Text on overlay */
+.experience-overlay h5 {
+  color: #d2b48c;
+  font-size: 1.6rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+/* Hover effects */
+.experience-card:hover .experience-img {
+  transform: scale(1.05);
+  filter: brightness(0.9) sepia(0.2);
+}
+.experience-card:hover .experience-overlay {
+  opacity: 1;
+}
+
+/* Buttons (if you use) */
+button.btn {
+  background-color: #bfa46f;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 10px 30px;
+  font-weight: 600;
+}
+
+button.btn:hover {
+  background-color: #a88d5a;
+}
+
+/* Carousel Section */
+.carousel-section {
+  background: linear-gradient(to top, #f7f2e8, #f7f4ef);
+}
+
+.carousel-section h2 {
+  color: #bfa46f;
+  font-weight: 600;
+  font-family: "Georgia", "Times New Roman", serif;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(191, 164, 111, 0.4);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.luxury-carousel-img {
+  height: 700px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-vision-overlay {
     position: static;
@@ -49,54 +303,6 @@
     margin-top: 1rem;
     padding: 1.5rem 1rem;
   }
-}
-.experience-section {
-  margin-top: 280px;
-  background: linear-gradient(to top, #fff3cd, #f8f5f0);
-}
-
-.experience-section h2 {
-  font-weight: 600;
-  font-family: "Tenor Sans", serif;
-}
-
-.experience-img {
-  height: 250px;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.experience-img:hover {
-  transform: scale(1.03);
-}
-
-.experience-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.experience-link h5 {
-  margin-top: 0.5rem;
-  font-weight: 700;
-  font-family: "Tenor Sans", serif;
-  color: #3a3a3a;
-}
-
-.experience-link:hover {
-  color: #3a3a3a;
-  text-decoration: none;
-}
-
-/* Buttons */
-button.btn {
-  border-radius: 0;
-  padding: 10px 30px;
-  font-weight: 600;
-}
-.arayan-homepage{
-  text-align: justify;
 }
 
 @media (max-width: 1024px) {

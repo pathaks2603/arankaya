@@ -1,70 +1,71 @@
-/* Hero Section */
-.hero-yoga {
+/* Hero */
+.yoga-hero {
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 60vh;
   position: relative;
 }
 
-.hero-yoga .overlay {
-  /* background-color: rgba(0, 0, 0, 0.4); */
+.yoga-hero-overlay {
   border-radius: 1rem;
   max-width: 700px;
 }
 
-.hero-yoga h1 {
+.yoga-hero h1 {
   font-family: "Tenor Sans", serif;
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.hero-yoga p {
+.yoga-hero p {
   font-size: 1.25rem;
   font-weight: 300;
 }
 
-/* Daily Routine Mini Card */
-.schedule-mini-box {
+/* Aranyaka way section */
+.yoga-aranyaka-section {
+  background-color: #faf6f0; /* soft detox beige */
+}
+
+/* Schedule card */
+.yoga-schedule-box {
   background-color: #fffdf9;
   border: 1px solid #ede6d9;
   border-radius: 1rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* Typography */
-.elegant-heading {
+.yoga-heading {
   font-family: "Tenor Sans", serif;
   font-size: 2rem;
   font-weight: 700;
+  color: #4a3f2a;
 }
 
-.luxury-paragraph {
+.yoga-paragraph {
   font-size: 1.15rem;
   line-height: 1.8;
   color: #4b4032;
 }
 
-.luxury-list {
+.yoga-list {
   padding-left: 1.5rem;
   font-size: 1.05rem;
   color: #3e3e3e;
 }
 
 /* Guru Section */
-.guru-section {
-  background-color: #fdfaf5;
+.yoga-guru-section {
+  background-color: #f8f5ef; /* warm ivory beige */
 }
 
-.guru-image {
+.yoga-guru-image {
   border-radius: 1.5rem;
   border: 3px solid #f0e9db;
 }
 
-/* Background tint */
-.bg-light-tint {
-  background-color: #faf6f0;
-}
 .yoga-page {
   margin-top: 3rem;
 }

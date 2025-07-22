@@ -1,38 +1,73 @@
 .custom-navbar {
-  background-color: rgb(28 29 28);
-  padding: 0.5rem 1rem;
+  background-color: rgba(216, 202, 184, 0.95);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.6rem 1.2rem;
+  border-bottom: 1px solid rgba(191, 164, 111, 0.4); /* soft gold underline */
 }
 
 .navbar-brand {
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: #fff;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.5px;
+  color: #6e5838 !important;
+  font-family: "Georgia", serif;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+.navbar-brand:hover {
+  color: #a3864c;
 }
 
 .navbar .nav-link {
-  color: white;
+  color: #3a3a3a;
+  font-family: "Georgia", "Times New Roman", serif;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.4px;
+  position: relative;
+  padding: 0.5rem 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #bfa46f;
+  transition: width 0.3s ease;
+  margin-top: 2px;
 }
 
 .navbar .nav-link:hover {
-  color: #f0c040;
+  color: #a3864c;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
 }
 
 .btn-outline-warning {
-  border-color: #f0c040;
-  color: #f0c040;
+  border-color: #bfa46f;
+  color: #bfa46f;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-weight: 600;
+  border-width: 2px;
+  padding: 0.35rem 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-outline-warning:hover {
-  background-color: #f0c040;
-  color: #1c1d1c;
+  background-color: #bfa46f;
+  color: #fff;
 }
 
-/* Mobile collapse styling */
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    background-color: rgba(28, 29, 28, 0.95);
+    background-color: rgba(232, 223, 211, 0.96); /* same as navbar */
+    backdrop-filter: blur(6px);
     padding: 1rem;
   }
 
