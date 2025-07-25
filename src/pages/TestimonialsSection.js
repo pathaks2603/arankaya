@@ -10,6 +10,7 @@ import {
 } from "../../src/firebase";
 import backgImage from "../assets/retreat/retreat1.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../pages/TestimonialsSection.css";
 
 const TestimonialsSection = () => {
   const [testimonials, setTestimonials] = useState([]);
