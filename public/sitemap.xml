@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.aranyakafarmstay.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.aranyakafarmstay.com/yoga</loc>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.aranyakafarmstay.com/food</loc>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.aranyakafarmstay.com/stay</loc>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.aranyakafarmstay.com/retreat</loc>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.aranyakafarmstay.com/gallery</loc>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.aranyakafarmstay.com/retreats/yoga-meditation</loc>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.aranyakafarmstay.com/retreats/detoxification</loc>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.aranyakafarmstay.com/retreats/weight-loss</loc>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.aranyakafarmstay.com/retreats/naturopathy</loc>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.aranyakafarmstay.com/retreats/panchakarma</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aranyakafarmstay.com/retreats/stress-management</loc>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://www.aranyakafarmstay.com/retreats/women</loc>
+    <priority>0.8</priority>
+  </url>
+  <!-- Add more URLs if needed -->
+</urlset>
