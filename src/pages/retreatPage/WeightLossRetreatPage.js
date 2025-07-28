@@ -180,18 +180,24 @@ const WeightLossRetreatPage = () => {
           <table className="table weight-table text-center">
             <thead>
               <tr>
-                <th>Room Type</th>
-                <th>Price (7 Days / 6 Nights)</th>
+                <th></th>
+                <th>3D/2N (Single)</th>
+                <th>3D/2N (Double)</th>
+                <th>7D/6N (Single)</th>
+                <th>7D/6N (Double)</th>
+                <th>14D/13N (Single)</th>
+                <th>14D/13N (Double)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Shared Double Room</td>
-                <td>₹29,500 per person</td>
-              </tr>
-              <tr>
-                <td>Private Room</td>
-                <td>₹36,000 per person</td>
+                <td>Detox Retreat</td>
+                <td>₹15,000</td>
+                <td>₹10,000</td>
+                <td>₹30,000</td>
+                <td>₹20,000</td>
+                <td>₹60,000</td>
+                <td>₹45,000</td>
               </tr>
             </tbody>
           </table>
@@ -215,8 +221,8 @@ const WeightLossRetreatPage = () => {
         {/* Booking */}
         <h3 className="weight-heading">📝 How to Book</h3>
         <ul className="weight-list mb-4">
-          <li>📩 Fill out the Retreat Booking Form</li>
-          <li>📞 Call or WhatsApp us at +91-XXXXXXX</li>
+          <li>📞 Call or WhatsApp: +91-9211985960</li>
+          <li>📧 Email: enquiry@aranyakafarmstay.com</li>
           <li>💬 Schedule a consultation to personalize your experience</li>
         </ul>
         <p className="mb-4">

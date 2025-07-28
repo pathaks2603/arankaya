@@ -5,6 +5,7 @@ import {
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
+  FaWhatsapp,
 } from "react-icons/fa";
 import "../pages/FooterHomepage.css";
 
@@ -20,11 +21,26 @@ const Footer = () => {
               rest, reflection, and reconnection with the land and oneself.
             </p>
             <div className="footer-social mt-3">
-              <a href="#" className="footer-icon me-3">
+              <a
+                href="https://www.facebook.com/people/Aranyaka-Farmstay/61577908467661/"
+                className="footer-icon me-3"
+                target="_blank"
+              >
                 <FaFacebookF />
               </a>
-              <a href="#" className="footer-icon">
+              <a
+                href="https://www.instagram.com/aranyaka_farmstays/"
+                className="footer-icon  me-3"
+                target="_blank"
+              >
                 <FaInstagram />
+              </a>
+              <a
+                href="https://wa.me/9211985960"
+                className="footer-icon"
+                target="_blank"
+              >
+                <FaWhatsapp />
               </a>
             </div>
           </Col>
@@ -42,11 +58,14 @@ const Footer = () => {
               </li>
               <li>
                 <FaPhoneAlt className="me-2" />
-                +91 8377085842
+                +91 9211985960
               </li>
               <li>
                 <FaEnvelope className="me-2" />
                 aranyaka.108@gmail.com
+              </li><li>
+                <FaEnvelope className="me-2" />
+                enquiry@aranyakafarmstay.com
               </li>
             </ul>
           </Col>

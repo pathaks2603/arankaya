@@ -78,7 +78,7 @@ const WomenWellnessRetreatPage = () => {
               </tr>
               <tr>
                 <td>8:00 AM</td>
-                <td>Satvik Breakfast</td>
+                <td>Organic Farm-Fresh Breakfast</td>
               </tr>
               <tr>
                 <td>9:00 – 11:00 AM</td>
@@ -184,6 +184,32 @@ const WomenWellnessRetreatPage = () => {
 
         {/* Pricing */}
         <h3 className="women-heading mt-5">💰 Pricing & Inclusions</h3>
+        <div className="table-responsive mb-4">
+          <table className="table panchakarma-table text-center">
+            <thead>
+              <tr>
+                <th></th>
+                <th>3D/2N (Single)</th>
+                <th>3D/2N (Double)</th>
+                <th>7D/6N (Single)</th>
+                <th>7D/6N (Double)</th>
+                <th>14D/13N (Single)</th>
+                <th>14D/13N (Double)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Women’s Wellness Retreat</td>
+                <td>₹15,000</td>
+                <td>₹10,000</td>
+                <td>₹30,000</td>
+                <td>₹20,000</td>
+                <td>₹60,000</td>
+                <td>₹45,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p>
           <strong>Package Includes:</strong> Accommodation (Private/Twin Share),
           Ayurvedic doctor consultation & pulse reading, all therapies as per
@@ -204,8 +230,8 @@ const WomenWellnessRetreatPage = () => {
         {/* Booking */}
         <h3 className="women-heading">📝 How to Book</h3>
         <ul className="women-list mb-4">
-          <li>📞 Call/WhatsApp: +91-8689928598</li>
-          <li>📧 Email: wellness@aranyakafarm.com</li>
+          <li>📞 Call or WhatsApp: +91-9211985960</li>
+          <li>📧 Email: enquiry@aranyakafarmstay.com</li>
           <li>📝 Fill the Women’s Wellness Booking Form</li>
         </ul>
         <p className="mb-4">

@@ -73,6 +73,8 @@ import hall16 from "../assets/gallery/teatime.JPG";
 import hall17 from "../assets/gallery/teatime2.JPG";
 import hall18 from "../assets/gallery/veggies.jpg";
 import hall19 from "../assets/gallery/yogalady.JPG";
+import hall20 from "../assets/gallery/gall.jpg";
+import hall21 from "../assets/gallery/gall2.jpg";
 
 const images = [
   aam3,
@@ -84,6 +86,10 @@ const images = [
   aam19,
   hall10,
   carromatterrace,
+  hall20,
+  aam20,
+  harita1,
+  hall21,
   aam8,
   hall1,
   aam10,
@@ -92,7 +98,6 @@ const images = [
   hall5,
   chitchat,
   aam1,
-
   aam16,
   diningarea,
   aam4,
@@ -101,8 +106,8 @@ const images = [
   farmview,
   aam7,
   hall12,
-  aam20,
-  harita1,
+  harita2,
+  aam17,
   hall3,
   aam18,
   hall9,
@@ -125,8 +130,6 @@ const images = [
   harita3,
   hall7,
   aam13,
-  harita2,
-  aam17,
   hall18,
   aam5,
   hall14,

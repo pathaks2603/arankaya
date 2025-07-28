@@ -9,6 +9,7 @@ import panchakarmaImg from "../assets/retreat/panchakarma/panchakarma2.jpg";
 import stressImg from "../assets/retreat/pain/painmanage2.jpg";
 import creativeImg from "../assets/retreat/women/women7.jpg";
 import backgImage2 from "../assets/retreat/retreat3.jpg";
+import creativeImage from "../assets/art/art5.JPEG";
 
 const retreats = [
   { name: "Yoga & Meditation", image: yogaImg, slug: "yoga-meditation" },
@@ -26,6 +27,7 @@ const retreats = [
     slug: "stress-management",
   },
   { name: "Women Wellness Retreat", image: creativeImg, slug: "women" },
+  {name : "Creative Soul Retreat", image: creativeImage, slug:"creative"}
 ];
 
 const RetreatsPage = () => {

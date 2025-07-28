@@ -78,7 +78,7 @@ const PainManagementRetreatPage = () => {
               </tr>
               <tr>
                 <td>9:00 AM</td>
-                <td>Nourishing Satvik Breakfast</td>
+                <td>Organic Farm-Fresh Breakfast</td>
               </tr>
               <tr>
                 <td>10:00 – 12:00 PM</td>
@@ -183,18 +183,24 @@ const PainManagementRetreatPage = () => {
           <table className="table pain-table text-center">
             <thead>
               <tr>
-                <th>Room Type</th>
-                <th>Price (5 Days / 4 Nights)</th>
+                <th></th>
+                <th>3D/2N (Single)</th>
+                <th>3D/2N (Double)</th>
+                <th>7D/6N (Single)</th>
+                <th>7D/6N (Double)</th>
+                <th>14D/13N (Single)</th>
+                <th>14D/13N (Double)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Shared Double Room</td>
-                <td>₹26,000 per person</td>
-              </tr>
-              <tr>
-                <td>Private Room</td>
-                <td>₹32,000 per person</td>
+                <td>Pain Retreat</td>
+                <td>₹15,000</td>
+                <td>₹10,000</td>
+                <td>₹30,000</td>
+                <td>₹20,000</td>
+                <td>₹60,000</td>
+                <td>₹45,000</td>
               </tr>
             </tbody>
           </table>
@@ -219,8 +225,8 @@ const PainManagementRetreatPage = () => {
         <h3 className="pain-heading">📝 How to Book</h3>
         <ul className="pain-list mb-4">
           <li>📩 Fill out the Pain Management Retreat Booking Form</li>
-          <li>📞 Call or WhatsApp: +91-8689928598</li>
-          <li>📧 Email: wellness@aranyakafarm.com</li>
+          <li>📞 Call or WhatsApp: +91-9211985960</li>
+          <li>📧 Email: enquiry@aranyakafarmstay.com</li>
         </ul>
         <p className="mb-4">
           <em>Retreat capacity is limited for personalized care.</em>

@@ -10,8 +10,8 @@ import outside1 from "../assets/back/bahr.jpg";
 import outside3 from "../assets/back/outside1.jpeg";
 import outside4 from "../assets/back/outside2.JPG";
 import outside5 from "../assets/back/outside3.JPG";
-import outside6 from "../assets/back/swim.jpg";
 import hall9 from "../assets/gallery/houseviewgarden.jpg";
+import hall10 from "../assets/back/backg.jpg";
 
 import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle.min";
 window.bootstrap = bootstrap;
@@ -22,7 +22,7 @@ const backgroundImages = [
   outside3,
   outside4,
   outside5,
-  outside6,
+  hall10,
 ];
 
 export default function AranyakaHomepage() {
@@ -83,12 +83,10 @@ export default function AranyakaHomepage() {
         ></div>
 
         <div className="overlay d-flex flex-column justify-content-center align-items-center back-display">
-          <h1 className="display-3">
-            LIVE THE ARANYAKA WAY
-            <h2 className="mb-3">
-              A return to the roots. A pause for the soul.
-            </h2>
-          </h1>
+          <h1 className="display-3">LIVE THE ARANYAKA WAY</h1>
+          <h2 className="mb-3 discription">
+            A return to the roots. A pause for the soul.
+          </h2>
         </div>
 
         {/* About & Vision */}
@@ -98,12 +96,12 @@ export default function AranyakaHomepage() {
               <div className="box light-box h-100">
                 <h2 className="mb-3">About Us</h2>
                 <p className="arayan-homepage">
-                  Aranyaka is a conscious farmstay rooted in simplicity,
-                  sustainability, and soulful living. Located in the heart of
-                  Ranipokhri and surrounded by 36 acres of mango and litchi
-                  orchards, we offer more than a place to stay—we offer a way to
-                  live. Inspired by the principles of permaculture and food
-                  forests, Aranyaka was created as a space where people can
+                  Aranyaka is a home based conscious farmstay rooted in
+                  simplicity, sustainability, and soulful living. Located in the
+                  heart of Ranipokhri and surrounded by 36 acres of mango and
+                  litchi orchards, we offer more than a place to stay—we offer a
+                  way to live. Inspired by the principles of permaculture and
+                  food forests, Aranyaka was created as a space where people can
                   pause, reconnect, and contribute. Whether you’re here for a
                   few days or a few weeks, your time is shaped by intentional
                   routines—wholesome food, nature-based living, community seva,
@@ -143,7 +141,7 @@ export default function AranyakaHomepage() {
       {/* Experience Section */}
       <section className="experience-section py-5">
         <div className="container text-center">
-          <h2 className="mb-5 exp">Experience</h2>
+          <h2 className="mb-5 exp">Experiences</h2>
           <div className="row">
             <div className="col-md-4">
               <Link to="/yoga" className="experience-link">
@@ -153,12 +151,13 @@ export default function AranyakaHomepage() {
                     alt="Yoga"
                     className="experience-img img-fluid rounded shadow mb-3"
                   />
-                  <div className="experience-overlay">
-                    <h5>Yoga</h5>
-                  </div>
+                </div>
+                <div className="experience-overlay">
+                  <h5>Yoga</h5>
                 </div>
               </Link>
             </div>
+
             <div className="col-md-4">
               <Link to="/food" className="experience-link">
                 <div className="experience-card">
@@ -167,12 +166,13 @@ export default function AranyakaHomepage() {
                     alt="Food"
                     className="experience-img img-fluid rounded shadow mb-3"
                   />
-                  <div className="experience-overlay">
-                    <h5>Food</h5>
-                  </div>
+                </div>
+                <div className="experience-overlay">
+                  <h5>Food</h5>
                 </div>
               </Link>
             </div>
+
             <div className="col-md-4">
               <Link to="/stay" className="experience-link">
                 <div className="experience-card">
@@ -181,16 +181,15 @@ export default function AranyakaHomepage() {
                     alt="Stay"
                     className="experience-img img-fluid rounded shadow mb-3"
                   />
-                  <div className="experience-overlay">
-                    <h5>Stay</h5>
-                  </div>
+                </div>
+                <div className="experience-overlay">
+                  <h5>Stay</h5>
                 </div>
               </Link>
             </div>
           </div>
         </div>
       </section>
-
       <TestimonialsSection />
       <Footer />
     </div>

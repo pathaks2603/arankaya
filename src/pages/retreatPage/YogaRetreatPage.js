@@ -68,7 +68,7 @@ const YogaRetreatPage = () => {
               </tr>
               <tr>
                 <td>12:30 PM</td>
-                <td>Satvik Lunch</td>
+                <td>Vegetarian Lunch</td>
               </tr>
               <tr>
                 <td>2:00 – 4:00 PM</td>
@@ -127,7 +127,7 @@ const YogaRetreatPage = () => {
               title="🛏️ Accommodation & Amenities"
               list={[
                 "Private or shared double occupancy rooms",
-                "Use of heated swimming pool, pickleball court, and yoga shala",
+                "Use of swimming pool, pickleball court, and yoga shala",
                 "All-natural organic bath products",
                 "Peaceful indoor spaces for reading, games, and conversation",
                 "Spa therapies available on request",
@@ -194,8 +194,8 @@ const YogaRetreatPage = () => {
         {/* Booking */}
         <h3 className="yoga-heading">📝 How to Book</h3>
         <ul className="yoga-list mb-4">
-          <li>📩 Fill out the Retreat Booking Form</li>
-          <li>📞 Call or WhatsApp us at +91-XXXXXXX</li>
+          <li>📞 Call or WhatsApp: +91-9211985960</li>
+          <li>📧 Email: enquiry@aranyakafarmstay.com</li>
           <li>💬 Speak to our Retreat Coordinator to help you choose</li>
         </ul>
         <p className="mb-4">

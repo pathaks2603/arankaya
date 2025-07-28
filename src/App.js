@@ -18,6 +18,7 @@ import PainManagementRetreatPage from "./pages/retreatPage/PainManagementRetreat
 import WomenRetreatPage from "./pages/retreatPage/WomenRetreatPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./ScrollToTop";
+import CreativeRetreatPage from "./pages/retreatPage/CreativeRetreatPage";
 
 function App() {
   return (
@@ -50,6 +51,8 @@ function App() {
           element={<PainManagementRetreatPage />}
         />
         <Route path="/retreats/women" element={<WomenRetreatPage />} />
+        <Route path="/retreats/creative" element={<CreativeRetreatPage />} />
+
       </Routes>
     </Router>
   );
