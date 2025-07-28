@@ -41,9 +41,9 @@ import aam10 from "../assets/amaram/aam10.jpeg";
 import aam13 from "../assets/amaram/aam13.jpeg";
 import aam17 from "../assets/amaram/aam17.jpeg";
 import aam18 from "../assets/amaram/aam18.jpeg";
-
-import mridang1 from "../assets/chaityana.jpeg";
-import mridang2 from "../assets/samtya.jpeg";
+import hall2 from "../assets/gallery/hallforsamatvanight.jpg";
+import hall3 from "../assets/gallery/hallforsamatvanivas.jpg";
+import hall4 from "../assets/gallery/hallforsamatvanivas2.jpg";
 
 // Room data
 const stayData = [
@@ -62,7 +62,7 @@ const stayData = [
   },
   {
     name: "Samatva Nivas – Twin Bed Room",
-    images: [samatva1, samatva2, samatva3],
+    images: [samatva1, samatva2, samatva3,hall2,hall3,hall4],
     description:
       "Designed for friends or fellow travelers who value simplicity and serenity. It reflects balance in design and energy.",
     features: [
@@ -85,19 +85,7 @@ const stayData = [
   },
   {
     name: "Aamram Kutir – Mango Orchard Suite",
-    images: [
-      aam1,
-      aam3,
-      aam4,
-      aam6,
-      aam11,
-      aam12,
-      aam14,
-      aam15,
-      aam16,
-      aam19,
-      aam20,
-    ],
+    images: [ aam17, aam18,aam1, aam3, aam4, aam6, aam15, aam19, aam20,aam2],
     description:
       "Overlooking the lush mango orchard, perfect for families or those who enjoy extra space to stretch and breathe.",
     features: [
@@ -109,7 +97,7 @@ const stayData = [
   },
   {
     name: "Panchbhooti Kutir – Sky & Earth Suite",
-    images: [aam2, aam5, aam9, aam7, aam8, aam10, aam13, aam17, aam18],
+    images: [aam5, aam9, aam7, aam8, aam10],
     description:
       "Offers both skyward inspiration and grounding earth energy with orchard views and open sky window.",
     features: [
@@ -120,20 +108,8 @@ const stayData = [
     ],
   },
   {
-    name: "Sattva Nivas – The Deluxe Room",
-    images: [sattva1],
-    description:
-      "A serene hideaway designed for deep rest and rejuvenation overlooking the spa and swimming pool.",
-    features: [
-      "Cozy double bed with organic linens",
-      "Spacious en-suite bathroom",
-      "Warm, earthy aesthetics",
-      "View of spa and pool",
-    ],
-  },
-  {
     name: "Mridang Kutir – The Quiet Retreat",
-    images: [mridang1, mridang2],
+    images: [aam11, aam12, aam14, aam16,aam13],
     description:
       "Our coziest cottage — simple, soulful, perfect for solo travelers or couples seeking peace.",
     features: [
@@ -181,7 +157,7 @@ const StayPage = () => {
           energy.
         </p>
         <div className="amenities-list">
-          <div className="amenity-item">Heated swimming pool</div>
+          <div className="amenity-item">All weather swimming pool</div>
           <div className="amenity-item">
             Spa therapies & wellness treatments
           </div>
@@ -205,7 +181,7 @@ const StayPage = () => {
           >
             <div className="col-md-6">
               <div className="luxury-carousel-wrapper">
-                <Carousel fade controls={false} interval={4000}>
+                <Carousel fade controls={false} interval={3000}>
                   {room.images.map((src, idx) => (
                     <Carousel.Item key={idx}>
                       <img

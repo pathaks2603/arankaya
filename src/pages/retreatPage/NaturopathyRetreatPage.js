@@ -176,18 +176,24 @@ const NaturopathyRetreatPage = () => {
           <table className="table naturopathy-table text-center">
             <thead>
               <tr>
-                <th>Room Type</th>
-                <th>Price (6 Days / 5 Nights)</th>
+                <th></th>
+                <th>3D/2N (Single)</th>
+                <th>3D/2N (Double)</th>
+                <th>7D/6N (Single)</th>
+                <th>7D/6N (Double)</th>
+                <th>14D/13N (Single)</th>
+                <th>14D/13N (Double)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Shared Double Room</td>
-                <td>₹24,000 per person</td>
-              </tr>
-              <tr>
-                <td>Private Room</td>
-                <td>₹31,000 per person</td>
+                <td>Naturopathy Retreat</td>
+                <td>₹15,000</td>
+                <td>₹10,000</td>
+                <td>₹30,000</td>
+                <td>₹20,000</td>
+                <td>₹60,000</td>
+                <td>₹45,000</td>
               </tr>
             </tbody>
           </table>
@@ -212,7 +218,8 @@ const NaturopathyRetreatPage = () => {
         <h3 className="naturopathy-heading">📝 How to Book</h3>
         <ul className="naturopathy-list mb-4">
           <li>📩 Fill out the Retreat Booking Form</li>
-          <li>📞 Call or WhatsApp us at +91-XXXXXXX</li>
+          <li>📞 Call or WhatsApp: +91-9211985960</li>
+          <li>📧 Email: enquiry@aranyakafarmstay.com</li>
           <li>💬 Schedule a wellness call with our in-house naturopath</li>
         </ul>
         <p className="mb-4">

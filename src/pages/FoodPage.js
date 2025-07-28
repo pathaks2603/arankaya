@@ -14,6 +14,11 @@ import food11 from "../assets/food/food12.jpg";
 import food12 from "../assets/food/food14.jpg";
 import food13 from "../assets/food/food15.jpg";
 import food14 from "../assets/food/food16.jpg";
+import food15 from "../assets/food/eat.jpg";
+import food16 from "../assets/food/eat1.jpg";
+import food17 from "../assets/food/eat2.jpg";
+import food18 from "../assets/food/eat3.jpg";
+
 
 const FoodPage = () => {
   return (
@@ -149,7 +154,10 @@ const FoodPage = () => {
     food12,
     food13,
     food14,
-    food2
+    food2,
+    food15,
+    food16,
+    food18
   ].map((src, idx) => (
     <div className="food-gallery-item" key={idx}>
       <img src={src} alt={`Food ${idx + 7}`} />

@@ -59,7 +59,7 @@ const YogaPage = () => {
                     Shared Skills
                   </li>
                   <li>
-                    <strong>1:30 PM</strong> – Wholesome Satvik Lunch
+                    <strong>1:30 PM</strong> – Wholesome Vegetarian Lunch
                   </li>
                   <li>
                     <strong>3:00 PM</strong> – Rest, Journaling or Spa Therapies

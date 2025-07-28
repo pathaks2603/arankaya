@@ -97,7 +97,14 @@ const TestimonialsSection = () => {
           <div className="carousel-inner">
             {testimonials.map((review, idx) => {
               const date =
-                review.createdAt?.toDate?.().toLocaleDateString() || "";
+                review.createdAt
+                  ?.toDate?.()
+                  .toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric",
+                  })
+                  ?.replace(/ /g, ",") || "";
               return (
                 <div
                   className={`carousel-item ${idx === 0 ? "active" : ""}`}

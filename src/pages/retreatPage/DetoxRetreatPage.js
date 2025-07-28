@@ -154,7 +154,7 @@ const DetoxRetreatPage = () => {
               list={[
                 "Comfortable double occupancy rooms",
                 "Access to spa therapies and treatments",
-                "Heated swimming pool, pickleball court, and walking trails",
+                "All weather swimming pool, pickleball court, and walking trails",
                 "Use of yoga shala, gardens, and creative indoor spaces",
                 "Organic bath products and filtered drinking water",
               ]}
@@ -226,7 +226,8 @@ const DetoxRetreatPage = () => {
         <h3 className="detox-heading">📝 How to Book</h3>
         <ul className="detox-list mb-4">
           <li>📩 Fill out the Retreat Booking Form</li>
-          <li>📞 Call or WhatsApp us at +91-XXXXXXX</li>
+          <li>📞 Call or WhatsApp: +91-9211985960</li>
+          <li>📧 Email: enquiry@aranyakafarmstay.com</li>
           <li>
             💬 Speak to our Wellness Coordinator to personalize your detox
           </li>
