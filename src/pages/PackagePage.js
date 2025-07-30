@@ -3,12 +3,12 @@ import "../../src/pages/PackagePage.css";
 import bgImage from "../assets/amaram.jpeg";
 
 const packages = [
-  { nights: 3, standard: 11250, discount: 10, final: 10125 },
-  { nights: 5, standard: 18750, discount: 12, final: 16500 },
-  { nights: 7, standard: 26250, discount: 15, final: 22313 },
-  { nights: 14, standard: 52500, discount: 20, final: 42000 },
-  { nights: 21, standard: 78750, discount: 25, final: 59063 },
-  { nights: 30, standard: 112500, discount: 30, final: 78750 },
+  { nights: 3, standard: 16250, discount: 10, final: 15125 },
+  { nights: 5, standard: 23750, discount: 12, final: 21500 },
+  { nights: 7, standard: 31250, discount: 15, final: 27313 },
+  { nights: 14, standard: 57500, discount: 20, final: 47000 },
+  { nights: 21, standard: 83750, discount: 25, final: 64063 },
+  { nights: 30, standard: 117500, discount: 30, final: 83750 }
 ];
 
 const PackagesPage = () => {
