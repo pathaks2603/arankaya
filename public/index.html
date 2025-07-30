@@ -31,20 +31,8 @@
       content="Experience soulful living at Aranyaka Farm Stay – a conscious eco-retreat in Ranipokhri, Uttarakhand. Surrounded by mango and litchi orchards, we offer yoga, retreats, farm-to-table food, and a serene nature-based lifestyle."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>Aranyaka Farm Stay – Eco Retreat in Ranipokhri, Uttarakhand</title>
     <meta property="og:title" content="Aranyaka Farm Stay – Home Based Eco Retreat" />
     <meta
@@ -57,26 +45,52 @@
     />
     <meta property="og:url" content="https://www.aranyakafarmstay.com/" />
     <meta property="og:type" content="website" />
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.aranyakafarmstay.com/"
+      },
+      "headline": "Home Based Eco Retreat Stay in Dehradun Rishikesh | Farmstay, Resort, Hotel, Airbnb, Yoga",
+      "description": "Discover Aranyaka, a home-based eco retreat stay in Dehradun & Rishikesh blending farmstay, resort comfort, yoga TTC, Airbnb charm, and authentic nature-inspired hospitality.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.aranyakafarmstay.com/static/media/cottageoutside.3755e1879daf8496d038.JPG",
+        "width": 1200,
+        "height": 800
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Aranyaka Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Aranyaka Farmstay",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.aranyakafarmstay.com/logo512.png",
+          "width": 600,
+          "height": 600
+        }
+      },
+      "datePublished": "2025-07-30",
+      "dateModified": "2025-07-30"
+    }
+    </script>
   </head>
   <body>
-    <noscript
-      >Escape the chaos—reconnect with nature and serenity at our peaceful farm
-      stay retreat! 🌿🐓🌅</noscript
-    >
+    <noscript>
+      Escape the chaos—reconnect with nature and serenity at our peaceful farm
+      stay retreat! 🌿🐓🌅
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"
-  ></script>
 </html>
